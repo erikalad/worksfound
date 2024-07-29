@@ -19,7 +19,7 @@ background-repeat:
 }
 @media (max-width: 1350px) {
     .container{
-        padding: 0px 100px !important;
+        padding: 50px 100px !important;
     }
 }
 
