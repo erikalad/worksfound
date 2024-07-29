@@ -20,6 +20,12 @@ background-repeat:
     height: 418px;
 }
 
+@media (max-width: 1350px) {
+    .container{
+        padding: 0px 100px !important;
+    }
+}
+
 @media (max-width: 800px) {
 
     .container{
