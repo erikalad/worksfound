@@ -10,6 +10,20 @@
     padding:50px 200px;
 }
 
+@media (max-width: 800px) {
+
+    .container{
+       flex-direction: column !important;
+       padding:40px !important;
+    }
+    .title{
+        font-size: 25px !important;
+        width: 100% !important;
+
+    }
+    
+}
+
 .containerCards{
     display: flex;
     justify-content: center;

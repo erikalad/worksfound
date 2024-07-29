@@ -18,6 +18,27 @@ background-repeat:
     gap:50px;
 }
 
+@media (max-width: 800px) {
+
+    .container{
+       flex-direction: column !important;
+       padding:40px !important;
+    }
+    
+    .title{
+        font-size: 25px !important;
+        width: 100% !important;
+    }
+
+    .container2{
+        flex-direction: column !important;
+    }
+    
+    .container1{
+        flex-direction: column;
+    }
+}
+
 .container2{
     border-radius: 20px;
     padding:20px;

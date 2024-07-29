@@ -4,6 +4,20 @@
     padding:10px 60px 10px 60px;
 }
 
+@media (max-width: 800px) {
+    .container{
+            justify-content: center;
+    }
+    .items{
+        display: none !important
+    }
+
+    .button{
+        display: none !important;
+    }
+    
+}
+
 .items{
     display: flex;
     align-items: center;

@@ -20,6 +20,46 @@ background-repeat:
     no-repeat; 
 }
 
+@media (max-width: 800px) {
+
+    .container{
+       flex-direction: column !important;
+       padding: 40px 40px;
+       gap:0px;
+       min-height: 500px;
+    }
+
+    .title{
+        text-align: center;
+        font-size: 25px !important;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px !important;
+        width: 100% !important;
+        text-shadow: 3px 8px 10px rgba(0, 0, 0, 0.10);
+    }
+
+    .subtitle{
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 30px !important;
+        width: 100% !important;
+       
+    }
+
+    .containerImage{
+        width: 100% !important;
+    }
+    
+    .containerTitle{
+        width: 100% !important;
+        margin-bottom:150px !important
+    }
+    
+}
+
 
 .containerImage{
     width: 90%;

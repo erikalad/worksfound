@@ -16,7 +16,7 @@ export default function Principal() {
       <div><Button title={'Comenzar'}/></div>
       </div>
       <div className={styles.imagen}>
-         <Image src={img1} width={500}/>
+         <Image src={img1} className={styles.img}/>
       </div>
     </div>
     </>

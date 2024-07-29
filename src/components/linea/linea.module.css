@@ -6,6 +6,13 @@
     background-color: var(--color-primary);
 }
 
+@media (max-width: 800px) {
+    .title{
+        font-size: 25px !important;
+    }
+    
+}
+
 .title{
     color: white;
     text-align: center;

@@ -13,12 +13,80 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div className={styles.container}>
-    <div className={styles.containerInner}>
-      <div className={styles.fila1}>
-        <div>
-          <Image src={logo} width={200} style={{marginBottom:'50px'}}/>
+      <div className={styles.containerInner}>
+        <div className={styles.fila1}>
+          <div
+            className={styles.containerImage}
+            style={{ marginBottom: "50px" }}
+          >
+            <Image src={logo} width={200} style={{ marginBottom: "35px" }} />
+            <div className={styles.contenido}>
+              Mejora tu salario y calidad de vida con oportunidades
+              internaciones
+            </div>
+          </div>
+          <div className={styles.contacto}>
+            <div className={styles.datos}>
+              <CiMail />
+              <Link href="mailto:info@worksfound.com" className={styles.a}>
+                info@worksfound.com
+              </Link>
+            </div>
+            <div className={styles.rrss}>
+              <Link
+                href="https://www.instagram.com/worksfound/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.a}
+              >
+                <div>
+                  <BiLogoInstagram className={styles.icon} />
+                </div>
+              </Link>
+              <Link
+                href="https://www.youtube.com/@WorksFound"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.a}
+              >
+                <div>
+                  <FaYoutube className={styles.icon} />
+                </div>
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/worksfound/posts/?feedView=all&viewAsMember=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.a}
+              >
+                <div>
+                  <FaLinkedin className={styles.icon} />
+                </div>
+              </Link>
+            </div>
+          </div>
         </div>
+
         <div className={styles.contacto}>
+          <div className={styles.titleSecciones}>Secciones</div>
+          <div className={styles.hr2}/>
+          <Link href="#empresas" passHref className={styles.a}>
+            <div className={styles.item}>Empresas</div>
+          </Link>
+          <Link href="#beneficios" passHref className={styles.a}>
+            <div className={styles.item}>Beneficios</div>
+          </Link>
+          <Link href="#portales" passHref className={styles.a}>
+            <div className={styles.item}>Portales</div>
+          </Link>
+          <Link href="#sobre-nosotros" passHref className={styles.a}>
+            <div className={styles.item}>Sobre Nosotros</div>
+          </Link>
+        </div>
+
+        <div className={styles.contacto}>
+        <div className={styles.titleSecciones}>Contacto</div>
+        <div className={styles.hr2}/>
           <div className={styles.datos}>
             <FaMapMarkerAlt />
             <Link
@@ -54,56 +122,16 @@ export default function Footer() {
           </div>
           <div className={styles.datos}>
             <CiMail />
-            <Link href="mailto:info@worksfound.com"   className={styles.a}>info@worksfound.com</Link>
+            <Link href="mailto:info@worksfound.com" className={styles.a}>
+              info@worksfound.com
+            </Link>
           </div>
         </div>
       </div>
-    <div className={styles.contacto}>
-        <Link href="#empresas" passHref className={styles.a}>
-        <div className={styles.item}>Empresas</div>
-        </Link>
-        <Link href="#beneficios" passHref className={styles.a}>
-        <div className={styles.item}>Beneficios</div>
-        </Link>
-        <Link href="#portales" passHref className={styles.a}>
-        <div className={styles.item}>Portales</div>
-        </Link>
-        <Link href="#sobre-nosotros" passHref className={styles.a}>
-        <div className={styles.item}>Sobre Nosotros</div>
-        </Link>
-      </div>
-
-      <div className={styles.rrss}>
-        <Link href="https://www.instagram.com/worksfound/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.a}>
-        <div>
-          <BiLogoInstagram className={styles.icon} />
-        </div>
-        </Link>
-        <Link href="https://www.youtube.com/@WorksFound"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.a}>
-        <div>
-          <FaYoutube className={styles.icon} />
-        </div>
-        </Link>
-        <Link href="https://www.linkedin.com/company/worksfound/posts/?feedView=all&viewAsMember=true"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.a}>
-        <div>
-          <FaLinkedin className={styles.icon} />
-        </div>
-        </Link>
-      </div>
-    </div>
-    <div className={styles.hr}/>
-    <div className={styles.copy}>
+      <div className={styles.hr} />
+      <div className={styles.copy}>
         © Copyright 2024 WorksFound. Todos los derechos reservados
-    </div>
+      </div>
     </div>
   );
 }
