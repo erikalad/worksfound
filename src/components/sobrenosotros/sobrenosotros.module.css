@@ -31,10 +31,12 @@ background-repeat:
     }
 
     .container2{
+        padding:0px !important;
         flex-direction: column !important;
     }
     
     .container1{
+        padding:0px !important;
         flex-direction: column;
     }
 }
