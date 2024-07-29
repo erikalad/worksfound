@@ -17,7 +17,7 @@ background-repeat:
     padding:50px 200px;
     gap:50px;
 }
-@media (max-width: 1350px) {
+@media (min-width: 800px) and (max-width: 1350px) {
     .container{
         padding: 50px 100px !important;
     }
