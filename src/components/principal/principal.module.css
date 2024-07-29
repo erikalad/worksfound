@@ -1,0 +1,44 @@
+.container{
+    background-image: 
+    url('./../../../public/assets/fondoprincipal.png'); 
+background-size: 
+    100% 100%;
+background-position: 
+    center;
+background-repeat: 
+    no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+    padding: 0px 200px;
+    gap:20px
+}
+
+
+.title{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    width: 90%;
+    text-shadow: 3px 8px 10px rgba(0, 0, 0, 0.10);
+}
+
+.spam{
+    color:var(--color-primary);
+}
+
+.subtitle{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 60px;
+    width: 90%;
+}
+
+.containerTitle{
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}

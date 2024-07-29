@@ -1,0 +1,66 @@
+.container{
+    background-color: var(--color-dark-accent);
+    padding:100px;
+}
+
+.containerInner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    color:white;
+    justify-content: flex-end;
+}
+.rrss{
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    gap:20px;
+    color:white 
+}
+
+.icon{
+width: 30px;
+height: 30px;
+cursor: pointer;
+}
+
+.icon:hover{
+    color:var(--color-dark);
+}
+
+.datos{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    cursor: pointer;
+}
+
+.a{
+    color:white
+}
+
+
+.a:hover{
+    color:var(--color-dark);
+}
+
+.hr{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.2;
+    margin:50px 0px
+}
+
+.copy{
+    display: flex;
+    margin:50px 0px 0px 0px;
+    color:white;
+    align-items: center;
+    justify-content: center;
+}

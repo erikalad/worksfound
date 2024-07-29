@@ -1,0 +1,24 @@
+:root {
+    --color-primary: #FB6304;
+    --color-secondary: #FAE0CF;
+    --color-ternary: #F0975D;
+    --color-muted: #F6AC7A;
+    --color-dark: #753F13;
+    --color-dark-accent: #ED7C32;
+    --color-medium: #86681D;
+    --color-bright: #F88C3C;
+  }
+
+*{
+    margin: 0;
+}
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+a{
+  text-decoration: none;
+}

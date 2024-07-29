@@ -1,0 +1,64 @@
+.container{
+    background-image: 
+    url('./../../../public/assets/fondo6.png'); 
+background-size: 
+    100% 100%;
+background-position: 
+    center;
+background-repeat: 
+    no-repeat; 
+    display: flex;
+    flex-direction: column;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:50px 200px;
+    gap:50px;
+}
+
+.container2{
+    border-radius: 20px;
+    padding:20px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap:20px;
+    align-items: center;
+}
+
+.container1{
+    gap:20px;
+    display: flex;
+    border-radius: 20px;
+    padding:20px;
+    align-items: center;
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    width: 90%;
+    text-shadow: 3px 8px 10px rgba(0, 0, 0, 0.10);
+    color:black;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.foto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:10px
+}
