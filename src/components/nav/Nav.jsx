@@ -19,6 +19,9 @@ export default function Nav() {
         <Link href="#portales" passHref className={styles.a}>
         <div className={styles.item}>Portales</div>
         </Link>
+        <Link href="#testimonios" passHref className={styles.a}>
+        <div className={styles.item}>Testimonios</div>
+        </Link>
         <Link href="#sobre-nosotros" passHref className={styles.a}>
         <div className={styles.item}>Sobre Nosotros</div>
         </Link>

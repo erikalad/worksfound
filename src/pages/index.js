@@ -7,6 +7,7 @@ import Portales from "@/components/portales/Portales";
 import Footer from "@/components/footer/Footer";
 import Sobrenostros from "@/components/sobrenosotros/Sobrenostros";
 import Linea from "@/components/linea/Linea";
+import Testimonios from "@/components/testimonios/Testimonios";
 
 
 export default function Home() {
@@ -25,6 +26,10 @@ export default function Home() {
     </div>
     <div id="portales">
     <Portales />
+    </div>
+    <Linea title={'Sus logros, nuestros logros'}/>
+    <div id="testimonios">
+      <Testimonios />
     </div>
     <Linea title={'Tus años de experiencia sí cuentan'}/>
     <div id="sobre-nosotros">
