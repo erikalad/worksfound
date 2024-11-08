@@ -22,7 +22,7 @@ export default function Footer() {
             <Image src={logo} width={200} style={{ marginBottom: "35px" }} />
             <div className={styles.contenido}>
               Mejora tu salario y calidad de vida con oportunidades
-              internaciones
+              internacionales
             </div>
           </div>
           <div className={styles.contacto}>
