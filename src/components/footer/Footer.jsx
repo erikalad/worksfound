@@ -133,7 +133,7 @@ export default function Footer() {
       </div>
       <div className={styles.hr} />
       <div className={styles.copy}>
-        © Copyright 2024 WorksFound. Todos los derechos reservados
+        © Copyright 2025 WorksFound. Todos los derechos reservados
       </div>
     </div>
   );
