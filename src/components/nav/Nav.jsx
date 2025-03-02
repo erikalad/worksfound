@@ -26,9 +26,9 @@ export default function Nav() {
         <div className={styles.item}>Sobre Nosotros</div>
         </Link>
         </div>
-        <div className={styles.button}>
+        {/* <div className={styles.button}>
         <Button title={'Contactanos'} />
-        </div>
+        </div> */}
     </div>
   )
 }

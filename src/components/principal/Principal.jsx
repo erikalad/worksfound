@@ -13,7 +13,7 @@ export default function Principal() {
       Automatiza tu <span className={styles.spam}>búsqueda y postulación</span> y encuentra tu próximo trabajo en 60 días <span className={styles.spam}>sin invertir tu tiempo</span>
       </div>
       <div className={styles.subtitle}>No esperes a tener tiempo libre para buscar empleo</div>
-      <div><Button title={'Comenzar'}/></div>
+      {/* <div><Button title={'Comenzar'}/></div> */}
       </div>
       <div className={styles.imagen}>
          <Image src={img1} className={styles.img}/>

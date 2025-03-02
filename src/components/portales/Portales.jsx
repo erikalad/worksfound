@@ -21,7 +21,7 @@ export default function Portales() {
             LinkedIn, Bumeran, Indeed, Glassdoor y más
           </span>
         </div>
-        <div><Button title={'Solicitar una demo'}/></div>
+        {/* <div><Button title={'Solicitar una demo'}/></div> */}
       </div>
       
     </div>
