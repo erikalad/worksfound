@@ -79,7 +79,10 @@ export default function JourneyTimeline() {
 
       {/* CTA Button */}
       <div className={styles.ctaContainer}>
-        <button className={styles.ctaButton}>
+        <button 
+          className={styles.ctaButton}
+          onClick={() => window.open('https://link.centralize.es/widget/booking/F2RSLzq5va0HCErLotg3', '_blank', 'noopener,noreferrer')}
+        >
           Comienza tu camino hoy
         </button>
       </div>
