@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./footer.module.css";
-import logo from "./../../../public/assets/wf.png";
+import logo from "./../../../public/assets/wf blanco.png";
 import Image from "next/image";
 import { BiLogoInstagram } from "react-icons/bi";
 import { FaYoutube } from "react-icons/fa";
@@ -19,19 +19,13 @@ export default function Footer() {
             className={styles.containerImage}
             style={{ marginBottom: "50px" }}
           >
-            <Image src={logo} width={200} style={{ marginBottom: "35px" }} />
+            <Image src={logo} width={100} />
             <div className={styles.contenido}>
               Mejora tu salario y calidad de vida con oportunidades
               internacionales
             </div>
           </div>
           <div className={styles.contacto}>
-            <div className={styles.datos}>
-              <CiMail />
-              <Link href="mailto:admin@worksfound.com" className={styles.a}>
-                admin@worksfound.com
-              </Link>
-            </div>
             <div className={styles.rrss}>
               <Link
                 href="https://www.instagram.com/worksfound/"

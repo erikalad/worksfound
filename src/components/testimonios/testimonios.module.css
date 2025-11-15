@@ -5,65 +5,40 @@
    margin-bottom:15px;
    padding: 20px;
    width: 100%;
+   overflow: hidden;
 }
 
-.carousel{
+.carouselWrapper{
    position: relative;
    width: 100%;
    max-width: 1400px;
-}
-
-.carouselInner{
-   position: relative;
    overflow: hidden;
-   width: 100%;
 }
 
-.carouselItem{
-   display: none;
-   width: 100%;
-   transition: opacity 0.6s ease-in-out;
+.carouselWrapper:hover .carouselTrack{
+   animation-play-state: paused;
 }
 
-.carouselItem.active{
-   display: block;
-}
-
-.videosContainer{
+.carouselTrack{
    display: flex;
-   justify-content: center;
    gap: 30px;
-   padding: 20px;
-   flex-wrap: wrap;
+   animation: scroll 60s linear infinite;
+   width: fit-content;
+}
+
+@keyframes scroll {
+   0% {
+      transform: translateX(0);
+   }
+   100% {
+      transform: translateX(-25%);
+   }
 }
 
 .videoWrapper{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   flex: 1;
-   min-width: 300px;
-   max-width: 400px;
-   gap: 15px;
-}
-
-.videoInfo{
-   text-align: center;
-   width: 100%;
-}
-
-.nombre{
-   font-size: 18px;
-   font-weight: 700;
-   margin: 0;
-   color: var(--color-dark-accent, #333);
-}
-
-.cargo{
-   font-size: 14px;
-   font-weight: 400;
-   margin: 5px 0 0 0;
-   color: var(--color-dark-accent, #666);
+   flex-shrink: 0;
+   width: 400px;
+   min-width: 400px;
 }
 
 .video{
@@ -72,94 +47,14 @@
    aspect-ratio: 16/9;
 }
 
-.carouselControlPrev,
-.carouselControlNext{
-   position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
-   background-color: rgba(0, 0, 0, 0.5);
-   border: none;
-   color: white;
-   width: 50px;
-   height: 50px;
-   border-radius: 50%;
-   cursor: pointer;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   z-index: 10;
-   transition: background-color 0.3s ease;
-}
-
-.carouselControlPrev:hover,
-.carouselControlNext:hover{
-   background-color: rgba(0, 0, 0, 0.8);
-}
-
-.carouselControlPrev{
-   left: 10px;
-}
-
-.carouselControlNext{
-   right: 10px;
-}
-
-.carouselControlIcon{
-   font-size: 30px;
-   font-weight: bold;
-   line-height: 1;
-}
-
-.indicators{
-   display: flex;
-   justify-content: center;
-   gap: 10px;
-   margin-top: 20px;
-   padding: 10px;
-}
-
-.indicator{
-   width: 12px;
-   height: 12px;
-   border-radius: 50%;
-   border: 2px solid var(--color-dark-accent, #333);
-   background-color: transparent;
-   cursor: pointer;
-   transition: all 0.3s ease;
-   padding: 0;
-}
-
-.indicator:hover{
-   background-color: var(--color-dark-accent, #333);
-   opacity: 0.7;
-}
-
-.indicator.active{
-   background-color: var(--color-dark-accent, #333);
-}
-
 @media (max-width: 800px) {
-   .videosContainer{
-      flex-direction: column;
-      align-items: center;
-   }
-   
    .videoWrapper{
-      width: 100%;
-      max-width: 100%;
+      width: 300px;
+      min-width: 300px;
    }
    
-   .video{
-      height: 250px;
-   }
-   
-   .carouselControlPrev,
-   .carouselControlNext{
-      width: 40px;
-      height: 40px;
-   }
-   
-   .carouselControlIcon{
-      font-size: 24px;
+   .carouselTrack{
+      gap: 20px;
+      animation: scroll 80s linear infinite;
    }
 }

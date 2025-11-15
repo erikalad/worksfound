@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useMemo } from "react";
 import styles from "./testimonios.module.css";
 
 function Testimonios() {
@@ -97,77 +97,30 @@ function Testimonios() {
     });
   }, []);
 
-  const videosPerSlide = 3;
-  const totalSlides = Math.ceil(testimonios.length / videosPerSlide);
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  // Autoplay - cambia de slide cada 5 segundos
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % totalSlides);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [totalSlides]);
-
-  const getVideosForSlide = (slideIndex) => {
-    const start = slideIndex * videosPerSlide;
-    return testimonios.slice(start, start + videosPerSlide);
-  };
-
-  const nextSlide = () => {
-    setActiveIndex((prev) => (prev + 1) % totalSlides);
-  };
-
-  const prevSlide = () => {
-    setActiveIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
-  };
-
-  const goToSlide = (index) => {
-    setActiveIndex(index);
-  };
+  // Duplicar los videos múltiples veces para crear un loop infinito perfecto
+  const testimoniosDuplicados = useMemo(() => {
+    // Duplicar 4 veces para asegurar continuidad sin espacios en blanco
+    return [...testimonios, ...testimonios, ...testimonios, ...testimonios];
+  }, [testimonios]);
 
   return (
     <div className={styles.container}>
-      <div className={styles.carousel}>
-        <div className={styles.carouselInner}>
-          {Array.from({ length: totalSlides }).map((_, slideIndex) => {
-            const videos = getVideosForSlide(slideIndex);
-            return (
-              <div
-                key={slideIndex}
-                className={`${styles.carouselItem} ${slideIndex === activeIndex ? styles.active : ""}`}
-              >
-                <div className={styles.videosContainer}>
-                  {videos.map((testimonio) => (
-                    <div key={testimonio.id} className={styles.videoWrapper}>
-                      <iframe
-                        width="100%"
-                        height="315"
-                        src={`https://www.youtube.com/embed/${testimonio.id}`}
-                        title={`Testimonio ${testimonio.nombre}`}
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen
-                        className={styles.video}
-                      ></iframe>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className={styles.indicators}>
-          {Array.from({ length: totalSlides }).map((_, index) => (
-            <button
-              key={index}
-              className={`${styles.indicator} ${index === activeIndex ? styles.active : ""}`}
-              onClick={() => goToSlide(index)}
-              aria-label={`Ir al slide ${index + 1}`}
-            ></button>
+      <div className={styles.carouselWrapper}>
+        <div className={styles.carouselTrack}>
+          {testimoniosDuplicados.map((testimonio, index) => (
+            <div key={`${testimonio.id}-${index}`} className={styles.videoWrapper}>
+              <iframe
+                width="100%"
+                height="315"
+                src={`https://www.youtube.com/embed/${testimonio.id}`}
+                title={`Testimonio ${testimonio.nombre}`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                className={styles.video}
+              ></iframe>
+            </div>
           ))}
         </div>
       </div>
