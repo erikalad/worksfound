@@ -48,7 +48,6 @@ export default function JourneyTimeline() {
               <div
                 key={step.number}
                 className={styles.stepCard}
-                style={{ animationDelay: `${index * 150}ms` }}
               >
                 {/* Number Circle */}
                 <div className={styles.numberCircle}>
