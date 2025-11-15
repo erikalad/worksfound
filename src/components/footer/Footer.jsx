@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./footer.module.css";
-import logo from "./../../../public/assets/logo2.png";
+import logo from "./../../../public/assets/wf.png";
 import Image from "next/image";
 import { BiLogoInstagram } from "react-icons/bi";
 import { FaYoutube } from "react-icons/fa";
@@ -28,8 +28,8 @@ export default function Footer() {
           <div className={styles.contacto}>
             <div className={styles.datos}>
               <CiMail />
-              <Link href="mailto:info@worksfound.com" className={styles.a}>
-                info@worksfound.com
+              <Link href="mailto:admin@worksfound.com" className={styles.a}>
+                admin@worksfound.com
               </Link>
             </div>
             <div className={styles.rrss}>
@@ -92,48 +92,33 @@ export default function Footer() {
         <div className={styles.hr2}/>
           <div className={styles.datos}>
             <FaMapMarkerAlt />
-            <Link
-              className={styles.a}
-              href="https://www.google.com/maps/place/Buenos+Aires,+Argentina"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Buenos Aires, Argentina
-            </Link>
+            <span className={styles.a}>
+              1908 Thomes Ave STE 12653<br />
+              Cheyenne, WY 82001
+            </span>
           </div>
           <div className={styles.datos}>
             <IoIosPhonePortrait />
             <Link
               className={styles.a}
-              href="https://wa.me/541122533256"
+              href="https://www.google.com/maps/place/1908+Thomes+Ave+STE+12653,+Cheyenne,+WY+82001"
               target="_blank"
               rel="noopener noreferrer"
             >
-              (+54) 11 2253-3256
-            </Link>
-          </div>
-          <div className={styles.datos}>
-            <IoIosPhonePortrait />
-            <Link
-              href="https://wa.me/541138606683"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.a}
-            >
-              (+54) 11 3860-6683
+              +54 9 11 7065-0453
             </Link>
           </div>
           <div className={styles.datos}>
             <CiMail />
-            <Link href="mailto:info@worksfound.com" className={styles.a}>
-              info@worksfound.com
+            <Link href="mailto:admin@worksfound.com" className={styles.a}>
+              admin@worksfound.com
             </Link>
           </div>
         </div>
       </div>
       <div className={styles.hr} />
       <div className={styles.copy}>
-        © Copyright 2025 WorksFound. Todos los derechos reservados
+        © Copyright 2025 WorksFound LLC. Todos los derechos reservados
       </div>
     </div>
   );

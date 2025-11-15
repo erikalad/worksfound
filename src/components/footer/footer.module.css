@@ -40,6 +40,9 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.datos:has(> a) {
   cursor: pointer;
 }
 
@@ -47,7 +50,7 @@
   color: white;
 }
 
-.a:hover {
+a.a:hover {
   color: var(--color-dark);
 }
 

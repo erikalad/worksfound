@@ -33,8 +33,8 @@ export default function Home() {
     </div>
     <Linea title={'Tus años de experiencia sí cuentan'}/>
     <div id="sobre-nosotros">
-    <Sobrenostros />
-    </div>
+{/*     <Sobrenostros />
+ */}    </div>
     <Footer />
     </>
   );

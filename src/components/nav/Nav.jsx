@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './nav.module.css'
-import logo from './../../../public/assets/logo.png'
+import logo from './../../../public/assets/wf.png'
 import Image from 'next/image'
 import Button from './Button'
 import Link from 'next/link'
