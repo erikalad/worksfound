@@ -5,8 +5,8 @@ import Image from "next/image";
 import { BiLogoInstagram } from "react-icons/bi";
 import { FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { IoIosPhonePortrait } from "react-icons/io";
-import { CiMail } from "react-icons/ci";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import Link from "next/link";
 
@@ -76,9 +76,6 @@ export default function Footer() {
           <Link href="#testimonios" passHref className={styles.a}>
             <div className={styles.item}>Testimonios</div>
           </Link>
-          <Link href="#sobre-nosotros" passHref className={styles.a}>
-            <div className={styles.item}>Sobre Nosotros</div>
-          </Link>
         </div>
 
         <div className={styles.contacto}>
@@ -92,10 +89,10 @@ export default function Footer() {
             </span>
           </div>
           <div className={styles.datos}>
-            <IoIosPhonePortrait />
+            <FaWhatsapp />
             <Link
               className={styles.a}
-              href="https://www.google.com/maps/place/1908+Thomes+Ave+STE+12653,+Cheyenne,+WY+82001"
+              href="https://wa.me/5491170650453"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -103,7 +100,7 @@ export default function Footer() {
             </Link>
           </div>
           <div className={styles.datos}>
-            <CiMail />
+            <FaEnvelope />
             <Link href="mailto:admin@worksfound.com" className={styles.a}>
               admin@worksfound.com
             </Link>

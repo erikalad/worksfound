@@ -1,0 +1,28 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.secondary {
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 1px solid transparent;
+}
+
+.default {
+  background-color: var(--brand-orange);
+  color: white;
+  border: 1px solid transparent;
+}
+
+.outline {
+  background-color: transparent;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+}
+

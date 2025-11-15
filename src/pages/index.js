@@ -8,6 +8,9 @@ import Footer from "@/components/footer/Footer";
 import Sobrenostros from "@/components/sobrenosotros/Sobrenostros";
 import Linea from "@/components/linea/Linea";
 import Testimonios from "@/components/testimonios/Testimonios";
+import JourneyTimeline from "@/components/journeyTimeline/JourneyTimeline";
+import CVShowcase from "@/components/cvSection/CVShowcase";
+import DynamicApplications from "@/components/dynamicApplications/DynamicApplications";
 
 
 export default function Home() {
@@ -18,20 +21,23 @@ export default function Home() {
     <Principal />
     </div>
     <Linea title={'Mejora tu calidad de vida encontrando el empleo que estás buscando'}/>
+    <div id="portales">
+    <Portales />
+    </div>
+    <JourneyTimeline />
+    <CVShowcase />
+    <DynamicApplications />
     <div id="empresas">
     <Mapa />
     </div>
     <div id="beneficios">
     <Propuesta />
     </div>
-    <div id="portales">
-    <Portales />
-    </div>
     <Linea title={'Sus logros, nuestros logros'}/>
     <div id="testimonios">
       <Testimonios />
     </div>
-    <Linea title={'Tus años de experiencia sí cuentan'}/>
+    {/* <Linea title={'Tus años de experiencia sí cuentan'}/> */}
     <div id="sobre-nosotros">
 {/*     <Sobrenostros />
  */}    </div>

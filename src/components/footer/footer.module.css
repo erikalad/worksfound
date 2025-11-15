@@ -1,6 +1,6 @@
 .container {
-  background-color: var(--color-dark-accent);
-  padding: 1rem 100px 100px 100px;
+  background-color: #fb6304;
+  padding: 1rem 100px 2rem 100px;
   margin-top: 2rem;
 }
 
@@ -18,7 +18,8 @@
   flex-direction: column;
   gap: 10px;
   color: white;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .rrss {
   align-items: center;
@@ -60,12 +61,12 @@ a.a:hover {
   width: 100%;
   background-color: rgb(255, 255, 255);
   opacity: 0.2;
-  margin: 50px 0px;
+  margin: 20px 0px;
 }
 
 .copy {
   display: flex;
-  margin: 50px 0px 0px 0px;
+  margin:  0px 0px 0px;
   color: white;
   align-items: center;
   justify-content: center;
