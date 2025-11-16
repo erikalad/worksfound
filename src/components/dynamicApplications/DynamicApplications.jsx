@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useState, useRef } from 'react'
-import { SiStripe, SiMicrosoft, SiGoogle, SiAmazon, SiFacebook } from 'react-icons/si'
+import Image from 'next/image'
 import Card from './Card'
 import Badge from './Badge'
 import styles from './index.module.css'
@@ -39,12 +39,13 @@ const statusConfig = {
   },
 }
 
-const companyIcons = {
-  'Stripe': SiStripe,
-  'Microsoft': SiMicrosoft,
-  'Google': SiGoogle,
-  'Amazon': SiAmazon,
-  'Meta': SiFacebook,
+// URLs de logos reales de las empresas
+const companyLogos = {
+  'Stripe': 'https://logo.clearbit.com/stripe.com',
+  'Microsoft': 'https://logo.clearbit.com/microsoft.com',
+  'Google': 'https://logo.clearbit.com/google.com',
+  'Amazon': 'https://logo.clearbit.com/amazon.com',
+  'Meta': 'https://logo.clearbit.com/meta.com',
 }
 
 const initialApplications = [
@@ -183,9 +184,14 @@ export default function DynamicApplications() {
                 <div className={styles.cardHeader}>
                   <div className={styles.cardCompany}>
                     <div className={styles.logo}>
-                      {React.createElement(companyIcons[app.company], { 
-                        style: { color: '#6b7280' }
-                      })}
+                      <Image 
+                        src={companyLogos[app.company]} 
+                        alt={`${app.company} logo`}
+                        width={40}
+                        height={40}
+                        style={{ objectFit: 'contain' }}
+                        unoptimized
+                      />
                     </div>
                     <div>
                       <h3 className={styles.companyName}>{app.company}</h3>
