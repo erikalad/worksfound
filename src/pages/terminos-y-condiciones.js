@@ -8,8 +8,8 @@ export default function Terminos() {
         <title>Términos y Condiciones – Worksfound LLC</title>
         <meta name="robots" content="noindex,nofollow" />
       </Head>
-      <main style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem 1rem', lineHeight: 1.7 }}>
-        <h1 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '0.5rem' }}>
+      <main style={{ maxWidth: '900px', margin: '5rem auto', padding: '2rem 1rem', lineHeight: 1.7 }}>
+        <h1 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '0.5rem', color: 'var(--brand-orange)' }}>
           TÉRMINOS Y CONDICIONES – worksfound LLC
         </h1>
         <p style={{ color: '#6b7280', marginBottom: '2rem' }}>
