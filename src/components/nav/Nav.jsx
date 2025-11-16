@@ -8,7 +8,9 @@ import Link from 'next/link'
 export default function Nav() {
   return (
     <div className={styles.container}>
-        <Image src={logo} className={styles.image} width={60}/>
+        <Link href="/" className={styles.logoLink}>
+          <Image src={logo} className={styles.image} width={60}/>
+        </Link>
         <div className={styles.items}>
         <Link href="#empresas" passHref className={styles.a}>
         <div className={styles.item}>Empresas</div>

@@ -5,6 +5,10 @@
     align-items: center;
 }
 
+.logoLink{
+    cursor: pointer;
+}
+
 @media (max-width: 800px) {
     .container{
             justify-content: center;
