@@ -46,6 +46,7 @@ const companyLogos = {
   'Google': 'https://logo.clearbit.com/google.com',
   'Amazon': 'https://logo.clearbit.com/amazon.com',
   'Meta': 'https://logo.clearbit.com/meta.com',
+  'Netflix': 'https://logo.clearbit.com/netflix.com',
 }
 
 const initialApplications = [
@@ -89,6 +90,14 @@ const initialApplications = [
     skills: ['Figma', 'Design'],
     time: '7h',
   },
+  {
+    id: '6',
+    company: 'Netflix',
+    position: 'Backend Engineer',
+    status: 'applied',
+    skills: ['Node.js', 'Microservicios'],
+    time: '8h',
+  },
 ]
 
 export default function DynamicApplications() {
@@ -121,15 +130,15 @@ export default function DynamicApplications() {
     const interval = setInterval(() => {
       setApplications((prev) => {
         const newApps = [...prev]
-        
+
         // Seleccionar una aplicación aleatoria para actualizar
         const randomIndex = Math.floor(Math.random() * newApps.length)
         const app = newApps[randomIndex]
-        
+
         // Avanzar al siguiente estado
         const statusFlow = ['applied', 'hr-review', 'technical', 'cultural', 'offer']
         const currentStatusIndex = statusFlow.indexOf(app.status)
-        
+
         if (currentStatusIndex < statusFlow.length - 1) {
           newApps[randomIndex] = {
             ...app,
@@ -142,7 +151,7 @@ export default function DynamicApplications() {
             status: 'applied',
           }
         }
-        
+
         // Reordenar: las más avanzadas arriba
         return newApps.sort((a, b) => {
           const aIndex = statusFlow.indexOf(a.status)
@@ -161,7 +170,7 @@ export default function DynamicApplications() {
         {/* Header */}
         <div className={styles.header}>
           <h2 className={styles.title}>
-            El Embudo de Reclutamiento
+            Aplica a miles de ofertas laborales de forma automática
           </h2>
           <p className={styles.subtitle}>
             WorksFound.io automatiza tus postulaciones en <span className={styles.emphasis}>+40 portales</span> y acelera tu proceso hacia el empleo
@@ -172,7 +181,7 @@ export default function DynamicApplications() {
         <div className={styles.applicationsGrid}>
           {applications.map((app, index) => {
             const config = statusConfig[app.status]
-            
+
             return (
               <Card
                 key={app.id}
@@ -184,8 +193,8 @@ export default function DynamicApplications() {
                 <div className={styles.cardHeader}>
                   <div className={styles.cardCompany}>
                     <div className={styles.logo}>
-                      <Image 
-                        src={companyLogos[app.company]} 
+                      <Image
+                        src={companyLogos[app.company]}
                         alt={`${app.company} logo`}
                         width={40}
                         height={40}
@@ -194,8 +203,8 @@ export default function DynamicApplications() {
                       />
                     </div>
                     <div>
-                      <h3 className={styles.companyName}>{app.company}</h3>
-                      <p className={styles.position}>{app.position}</p>
+                      <h3 className={styles.companyName}>{app.position}</h3>
+                      <p className={styles.position}>{app.company}</p>
                     </div>
                   </div>
                   <span className={styles.time}>{app.time}</span>
@@ -209,19 +218,19 @@ export default function DynamicApplications() {
                   ))}
                 </div>
 
-                <div 
+                <div
                   className={styles.statusContainer}
                   style={{
                     backgroundColor: config.bgColor,
                   }}
                 >
-                  <div 
+                  <div
                     className={styles.statusDot}
                     style={{
                       backgroundColor: config.color,
                     }}
                   />
-                  <span 
+                  <span
                     className={styles.statusLabel}
                     style={{
                       color: config.textColor,

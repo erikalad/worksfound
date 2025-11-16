@@ -76,6 +76,9 @@ export default function Footer() {
           <Link href="#testimonios" passHref className={styles.a}>
             <div className={styles.item}>Testimonios</div>
           </Link>
+          <Link href="/terminos-y-condiciones" passHref className={styles.a}>
+            <div className={styles.item}>Términos y Condiciones</div>
+          </Link>
         </div>
 
         <div className={styles.contacto}>

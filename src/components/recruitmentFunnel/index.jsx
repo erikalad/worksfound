@@ -87,7 +87,7 @@ const RecruitmentFunnel = () => {
         {/* Header */}
         <div className={styles.header}>
           <h2 className={styles.title}>
-            El Embudo de Reclutamiento
+            Aplica a miles de ofertas laborales de forma automática
           </h2>
           <p className={styles.subtitle}>
             Así es cómo <span className={styles.subtleEmphasis}>WorksFound.io</span> automatiza tus postulaciones en +40 portales y acelera tu proceso hacia el empleo
