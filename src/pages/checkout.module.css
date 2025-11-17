@@ -1,0 +1,588 @@
+/* Main Container */
+.main {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #fff7ed, #ffffff, #fff7ed);
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--color-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #4b5563;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+/* Grid Layout */
+.gridLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .gridLayout {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .title {
+    font-size: 3rem;
+  }
+}
+
+/* Left Column */
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border: 2px solid #fed7aa;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.featureItem {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.featureIcon {
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #fff7ed;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-primary);
+}
+
+.featureTitle {
+  font-weight: 700;
+  color: #111827;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.featureDescription {
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* Nuevo diseño de beneficios reemplazando statsGrid */
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.benefitCard {
+  background: white;
+  border: 2px solid #fed7aa;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.benefitCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.15);
+}
+
+.benefitIcon {
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: linear-gradient(135deg, var(--color-primary), #fb923c);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.benefitIcon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.benefitContent {
+  flex: 1;
+}
+
+.benefitNumber {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.benefitLabel {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+  line-height: 1.3;
+}
+
+/* Tarjeta de éxito/incremento de posibilidades */
+.successCard {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+  border: 2px solid #fb923c;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.1);
+  margin-bottom: 1rem;
+}
+
+.successIcon {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(135deg, var(--color-primary), #fb923c);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.successIcon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.successContent {
+  flex: 1;
+}
+
+.successTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #9a3412;
+  margin-bottom: 0.5rem;
+}
+
+.successText {
+  font-size: 0.875rem;
+  color: #7c2d12;
+  line-height: 1.5;
+}
+
+/* Tarjeta destacada de términos de pago */
+.paymentTermsCard {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  border: 2px solid #16a34a;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  box-shadow: 0 4px 16px rgba(22, 163, 74, 0.2);
+  animation: pulse-border 2s ease-in-out infinite;
+}
+
+@keyframes pulse-border {
+  0%, 100% {
+    box-shadow: 0 4px 16px rgba(22, 163, 74, 0.2);
+  }
+  50% {
+    box-shadow: 0 4px 24px rgba(22, 163, 74, 0.4);
+  }
+}
+
+.paymentTermsIcon {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.paymentTermsIcon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.paymentTermsContent {
+  flex: 1;
+}
+
+.paymentTermsTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #14532d;
+  margin-bottom: 0.5rem;
+}
+
+.paymentTermsText {
+  font-size: 0.875rem;
+  color: #15803d;
+  line-height: 1.6;
+}
+
+.paymentTermsText strong {
+  font-weight: 700;
+  color: #14532d;
+}
+
+/* Right Column - Payment */
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.paymentCard {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #c2410c 100%);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  color: white;
+  box-shadow: 0 20px 40px rgba(234, 88, 12, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paymentCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px rgba(234, 88, 12, 0.3);
+}
+
+.priceSection {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.priceLabel {
+  color: #fed7aa;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.priceAmount {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.priceCurrency {
+  font-size: 1.25rem;
+  color: #fed7aa;
+}
+
+.priceSubtext {
+  color: #fed7aa;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.summaryBox {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.summaryTitle {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.summaryList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summaryLabel {
+  color: #fed7aa;
+}
+
+.summaryValue {
+  font-weight: 500;
+}
+
+.summaryDiscount {
+  font-weight: 500;
+  color: #86efac;
+}
+
+.summaryDivider {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0.5rem 0;
+}
+
+.summaryTotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding-top: 0.5rem;
+}
+
+/* Payment Button Area */
+.paymentButtonArea {
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.paymentSecureText {
+  font-size: 0.875rem;
+  color: #fed7aa;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.paymentButtonContainer {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* Estilos para el botón de DlocalGo */
+.paymentButtonContainer :global(#dp-btn-029b1854-2df9-4cb6-bcf7-ad22ebe76a74),
+.paymentButtonContainer :global(#dp-btn-029b1854-2df9-4cb6-bcf7-ad22ebe76a74) button,
+.paymentButtonContainer :global(#dp-btn-029b1854-2df9-4cb6-bcf7-ad22ebe76a74) > div {
+  width: 100% !important;
+}
+
+.paymentButtonContainer :global(#dp-btn-029b1854-2df9-4cb6-bcf7-ad22ebe76a74) button {
+  width: 100% !important;
+  background-color: var(--color-primary) !important;
+  border: none !important;
+  border-radius: 0.5rem !important;
+  padding: 1rem !important;
+  color: white !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: opacity 0.2s !important;
+}
+
+.paymentButtonContainer :global(#dp-btn-029b1854-2df9-4cb6-bcf7-ad22ebe76a74) button:hover {
+  opacity: 0.9 !important;
+}
+
+.securityBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: #fed7aa;
+  margin-top: 1.5rem;
+}
+
+.securityIcon {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Guarantee Card */
+.guaranteeCard {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.guaranteeContent {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.guaranteeIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #16a34a;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.guaranteeTitle {
+  font-weight: 700;
+  color: #14532d;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.guaranteeText {
+  font-size: 0.75rem;
+  color: #15803d;
+  line-height: 1.5;
+}
+
+/* Terms */
+.terms {
+  text-align: center;
+}
+
+.terms p {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.link {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Trust Bar */
+.trustBar {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 2rem;
+}
+
+.trustGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .trustGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.trustItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.trustIcon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.trustText {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+/* Testimonios Section */
+.testimoniosSection {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .paymentCard {
+    box-shadow: 0 10px 25px rgba(234, 88, 12, 0.15);
+  }
+  
+  .priceAmount {
+    font-size: 2.5rem;
+  }
+
+  .testimoniosSection {
+    margin-top: 3rem;
+    padding-top: 2rem;
+  }
+
+  /* Stack beneficios en móvil */
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+  }
+}

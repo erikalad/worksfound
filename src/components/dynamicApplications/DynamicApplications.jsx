@@ -21,7 +21,7 @@ const statusConfig = {
   },
   technical: {
     label: 'Prueba Técnica',
-    color: '#fb6304',
+    color: '#fa6501',
     textColor: '#c2410c',
     bgColor: '#ffedd5',
   },
@@ -257,9 +257,9 @@ export default function DynamicApplications() {
             <div className={styles.statPercentage} style={{ color: '#9333ea' }}>10%</div>
           </div>
           <div className={styles.statCard} style={{ backgroundColor: '#ffedd5' }}>
-            <div className={styles.statNumber} style={{ color: '#fb6304' }}>5</div>
+            <div className={styles.statNumber} style={{ color: '#fa6501' }}>5</div>
             <div className={styles.statLabel}>Prueba Técnica</div>
-            <div className={styles.statPercentage} style={{ color: '#fb6304' }}>5%</div>
+            <div className={styles.statPercentage} style={{ color: '#fa6501' }}>5%</div>
           </div>
           <div className={styles.statCard} style={{ backgroundColor: '#e0e7ff' }}>
             <div className={styles.statNumber} style={{ color: '#6366f1' }}>2</div>

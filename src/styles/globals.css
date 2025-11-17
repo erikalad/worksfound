@@ -1,6 +1,6 @@
 :root {
     /* Primary brand color - used across all components */
-    --color-primary: #FB6304;
+    --color-primary: #fa6501;
     --brand-orange: var(--color-primary);
     
     /* Secondary colors */
@@ -71,10 +71,10 @@ a{
 
 @keyframes pulseGlow {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(251, 99, 4, 0.7);
+    box-shadow: 0 0 0 0 rgba(250, 101, 1, 0.7);
   }
   50% {
-    box-shadow: 0 0 0 10px rgba(251, 99, 4, 0);
+    box-shadow: 0 0 0 10px rgba(250, 101, 1, 0);
   }
 }
 
@@ -105,4 +105,27 @@ a{
 
 .animate-flow-down {
   animation: flowDown 1.5s ease-out forwards;
+}
+
+/* Estilos para el botón de DlocalGo en checkout */
+#dp-btn-029b1854-2df9-4cb6-bcf7-ad22ebe76a74 {
+  width: 100% !important;
+}
+
+#dp-btn-029b1854-2df9-4cb6-bcf7-ad22ebe76a74 button,
+#dp-btn-029b1854-2df9-4cb6-bcf7-ad22ebe76a74 > div button {
+  width: 100% !important;
+  background-color: var(--color-primary) !important;
+  border: none !important;
+  border-radius: 0.5rem !important;
+  padding: 1rem !important;
+  color: white !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: opacity 0.2s !important;
+}
+
+#dp-btn-029b1854-2df9-4cb6-bcf7-ad22ebe76a74 button:hover,
+#dp-btn-029b1854-2df9-4cb6-bcf7-ad22ebe76a74 > div button:hover {
+  opacity: 0.9 !important;
 }

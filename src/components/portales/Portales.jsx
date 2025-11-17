@@ -8,7 +8,7 @@ export default function Portales() {
   return (
     <div className={styles.container}>
       <div className={styles.contenedorIconos}>
-        <Image src={gif} className={styles.image} width={550} />
+        <Image src={gif} className={styles.image} width={550} alt="Plataformas de empleo disponibles" />
       </div>
       <div className={styles.contenedorTextos}>
         <div className={styles.title}>

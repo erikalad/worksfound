@@ -9,7 +9,7 @@ export default function Nav() {
   return (
     <div className={styles.container}>
         <Link href="/" className={styles.logoLink}>
-          <Image src={logo} className={styles.image} width={60}/>
+          <Image src={logo} className={styles.image} width={60} alt="WorksFound Logo" />
         </Link>
         <div className={styles.items}>
         <Link href="#empresas" passHref className={styles.a}>

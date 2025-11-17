@@ -19,7 +19,7 @@ export default function Footer() {
             className={styles.containerImage}
             style={{ marginBottom: "50px" }}
           >
-            <Image src={logo} width={100} />
+            <Image src={logo} width={100} alt="WorksFound Logo" />
             <div className={styles.contenido}>
               Mejora tu salario y calidad de vida con oportunidades
               internacionales
