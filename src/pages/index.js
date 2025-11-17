@@ -23,8 +23,8 @@ export default function Home() {
     </div>
     <JourneyTimeline />
     <Linea title={'Sus logros, nuestros logros'}/>
-    <div id="testimonios">
-      <Testimonios />
+    <div id="testimonios" className="testimonios-home">
+      <Testimonios variant="home" cardHeight={220} />
     </div>
     <CVShowcase />
     <DynamicApplications />

@@ -1,0 +1,35 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.scrollContainer {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  /* El ancho interno puede ser mayor para el scroll, pero el contenedor padre lo limita */
+  width: fit-content;
+  min-width: 100%;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.grab {
+  cursor: grab;
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.item {
+  flex-shrink: 0;
+}
+

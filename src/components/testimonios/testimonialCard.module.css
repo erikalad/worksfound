@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 400px;
+  user-select: none;
+  -webkit-user-select: none;
+  height: fit-content;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.nombre {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #111827;
+  margin: 0;
+}
+
+.cargo {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.fecha {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0;
+}
+

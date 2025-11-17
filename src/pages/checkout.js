@@ -19,7 +19,7 @@ export default function CheckoutPage() {
 
     const containerId = 'dp-btn-029b1854-2df9-4cb6-bcf7-ad22ebe76a74'
     const referenceId = '029b1854-2df9-4cb6-bcf7-ad22ebe76a74'
-    
+
     // Limpiar cualquier botón existente
     const existingButton = document.getElementById(containerId)
     if (existingButton) {
@@ -184,6 +184,13 @@ export default function CheckoutPage() {
                   </p>
                 </div>
               </div>
+              {/* Testimonios Section */}
+              <div className={styles.testimoniosMini}>
+                <Testimonios variant="mini" cardHeight={185} />
+              </div>
+            </div>
+            {/* Right Column - Payment Area */}
+            <div className={styles.rightColumn}>
               <div className={styles.paymentTermsCard}>
                 <div className={styles.paymentTermsIcon}>
                   <FaDollarSign />
@@ -191,14 +198,11 @@ export default function CheckoutPage() {
                 <div className={styles.paymentTermsContent}>
                   <h3 className={styles.paymentTermsTitle}>Ingreso a bajo costo</h3>
                   <p className={styles.paymentTermsText}>
-                    Termina de pagar <strong>SOLO si consigues empleo</strong> con nuestra ayuda. 
+                    Termina de pagar <strong>SOLO si consigues empleo</strong> con nuestra ayuda.
                     Tu éxito es nuestro compromiso.
                   </p>
                 </div>
               </div>
-            </div>
-            {/* Right Column - Payment Area */}
-            <div className={styles.rightColumn}>
               <div className={styles.paymentCard}>
                 <div className={styles.priceSection}>
                   <p className={styles.priceLabel}>PRECIO ESPECIAL</p>
@@ -282,10 +286,7 @@ export default function CheckoutPage() {
             </div>
           </div>
         </div>
-        {/* Testimonios Section */}
-        <div className={styles.testimoniosSection}>
-          <Testimonios />
-        </div>
+
       </main>
     </>
   )
