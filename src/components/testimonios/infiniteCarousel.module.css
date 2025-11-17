@@ -8,13 +8,15 @@
 
 .scrollContainer {
   display: flex;
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
   /* El ancho interno puede ser mayor para el scroll, pero el contenedor padre lo limita */
-  width: fit-content;
   min-width: 100%;
+  cursor: grab;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: auto;
 }
 
 .scrollContainer::-webkit-scrollbar {

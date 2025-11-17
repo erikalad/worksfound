@@ -130,9 +130,73 @@ a{
   opacity: 0.9 !important;
 }
 
-/* Padding para testimonios solo en home */
+/* Estilos para testimonios en home - replicando checkout pero con tamaño de carta de home */
 .testimonios-home {
   padding: 20px 2rem;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.testimonios-home > * {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+.testimonios-home :global(.container) {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+/* Forzar ancho del InfiniteCarousel - sobrescribir cualquier style inline */
+.testimonios-home :global(div[class*="container"]) {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+.testimonios-home :global(div[style]) {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+/* Aplicar directamente al contenedor del InfiniteCarousel */
+.testimonios-home > div {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+.testimonios-home > div > div:first-child {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+.testimonios-home :global(.scrollContainer) {
+  /* El scrollContainer puede tener width: fit-content para el scroll interno */
+  /* pero el contenedor padre con overflow: hidden lo limita */
+  box-sizing: border-box;
+}
+
+.testimonios-home :global(.card) {
+  width: 400px !important;
+  min-width: 400px !important;
+  max-width: 400px !important;
+  flex-shrink: 0;
+}
+
+.testimonios-home :global(iframe) {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
 }
 
 @media (min-width: 769px) {
