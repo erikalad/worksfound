@@ -117,6 +117,20 @@
   opacity: 0.9;
 }
 
+.langCode {
+  display: inline-block;
+}
+
+.langText {
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  .langText {
+    display: none;
+  }
+}
+
 .cvCard {
   background: white;
   border-radius: 1rem;

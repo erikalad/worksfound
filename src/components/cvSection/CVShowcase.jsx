@@ -69,13 +69,15 @@ export default function CVShowcase() {
               onClick={() => setLanguage('en')}
               className={`${styles.languageBadge} ${language === 'en' ? styles.active : styles.inactive}`}
             >
-              🇬🇧 English Version
+              <span className={styles.langCode}>EN</span>
+              <span className={styles.langText}> English Version</span>
             </Badge>
             <Badge 
               onClick={() => setLanguage('es')}
               className={`${styles.languageBadge} ${language === 'es' ? styles.active : styles.inactive}`}
             >
-              🇪🇸 Versión Español
+              <span className={styles.langCode}>ES</span>
+              <span className={styles.langText}> Versión Español</span>
             </Badge>
           </div>
           {/* CV Preview Card */}
