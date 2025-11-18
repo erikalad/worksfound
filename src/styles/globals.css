@@ -31,6 +31,51 @@ body {
     font-family: 'Open Sans', sans-serif;
   }
 
+/* Estilos globales de tipografía basados en el componente Portales */
+
+/* Estilo global para todos los títulos principales */
+.global-title,
+h1.global-title,
+h2.global-title,
+h3.global-title {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  text-shadow: 3px 8px 10px rgba(0, 0, 0, 0.10);
+  color: #1a1a1a;
+}
+
+/* Estilo global para todos los textos/subtítulos */
+.global-text,
+.global-subtitle,
+p.global-text,
+p.global-subtitle {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* Responsive para títulos globales */
+@media (max-width: 800px) {
+  .global-title,
+  h1.global-title,
+  h2.global-title,
+  h3.global-title {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .global-text,
+  .global-subtitle,
+  p.global-text,
+  p.global-subtitle {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
 a{
   text-decoration: none;
 }

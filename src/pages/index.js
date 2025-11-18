@@ -9,6 +9,7 @@ import Testimonios from "@/components/testimonios/Testimonios";
 import JourneyTimeline from "@/components/journeyTimeline/JourneyTimeline";
 import CVShowcase from "@/components/cvSection/CVShowcase";
 import DynamicApplications from "@/components/dynamicApplications/DynamicApplications";
+import StatsShowcase from "@/components/statsShowcase/StatsShowcase";
 
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
     <div id="testimonios" className="testimonios-home">
       <Testimonios variant="home" cardHeight={220} />
     </div>
+    <StatsShowcase />
     <CVShowcase />
     <DynamicApplications />
     <div id="empresas">

@@ -85,6 +85,7 @@ background-repeat:
     font-style: normal;
     font-weight: 700;
     text-shadow: 3px 8px 10px rgba(0, 0, 0, 0.10);
+    color: #1a1a1a;
 }
 
 .subtitle{
@@ -92,6 +93,7 @@ background-repeat:
     font-style: normal;
     font-weight: 300;
     width: 90%;
+    color: #4b5563;
 }
 
 .spam{
