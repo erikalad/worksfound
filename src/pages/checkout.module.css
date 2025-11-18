@@ -78,18 +78,6 @@
     font-size: 18px;
     text-align: center;
   }
-
-  .cardTitle {
-    font-size: 25px;
-  }
-
-  .featureTitle {
-    font-size: 25px;
-  }
-
-  .featureDescription {
-    font-size: 18px;
-  }
 }
 
 /* Left Column */
@@ -112,12 +100,10 @@
 }
 
 .cardTitle {
-  font-size: 30px;
-  font-style: normal;
+  font-size: 1.5rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #111827;
   margin-bottom: 1.5rem;
-  text-shadow: 3px 8px 10px rgba(0, 0, 0, 0.10);
 }
 
 .featureList {
@@ -151,19 +137,15 @@
 
 .featureTitle {
   font-weight: 700;
-  color: #1a1a1a;
-  font-size: 30px;
-  font-style: normal;
+  color: #111827;
+  font-size: 1rem;
   margin-bottom: 0.25rem;
-  text-shadow: 3px 8px 10px rgba(0, 0, 0, 0.10);
 }
 
 .featureDescription {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 300;
-  color: #4b5563;
-  line-height: 1.6;
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.5;
 }
 
 /* Nuevo diseño de beneficios reemplazando statsGrid */
